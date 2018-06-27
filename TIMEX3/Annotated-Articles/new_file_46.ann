@@ -1,0 +1,8 @@
+T1	Duration 322 328	एक माह
+#1	AnnotatorNotes T1	value="P1M"
+T2	Date 133 158	Wed, 29 Nov 2017 06:04 PM
+#2	AnnotatorNotes T2	value="2017-11-29T18:04"
+T3	Date 180 205	Wed, 29 Nov 2017 06:04 PM
+#3	AnnotatorNotes T3	value="2017-11-29T18:04"
+T4	Duration 940 948	पूरा दिन
+#4	AnnotatorNotes T4	value="P1D"
