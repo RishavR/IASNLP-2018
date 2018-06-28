@@ -1,0 +1,18 @@
+T1	Date 113 138	Tue, 28 Nov 2017 01:24 PM
+#1	AnnotatorNotes T1	value="2017-11-28T13:24"
+T2	Date 160 185	Tue, 28 Nov 2017 03:55 PM
+#2	AnnotatorNotes T2	value="2017-11-28T15:55"
+T3	Duration 218 231	बीते दो दिनों
+#3	AnnotatorNotes T3	value="P2D" beginPoint="2017-11-27" endPoint="2017-11-28"
+T4	Date 286 293	मंगलवार
+#4	AnnotatorNotes T4	value="2017-11-28"
+T5	Time 332 338	11 बजे
+#5	AnnotatorNotes T5	value="T11:00"
+T6	Date 398 404	सोमवार
+#6	AnnotatorNotes T6	value="2017-11-27"
+T7	Duration 433 446	बीते दो महीने
+#7	AnnotatorNotes T7	value="P2M"
+T9	Duration 549 557	दो महीने
+#8	AnnotatorNotes T9	value="P2M"
+T11	Duration 803 818	बीते पांच सालों
+#9	AnnotatorNotes T11	value="2013-XX-XX"
