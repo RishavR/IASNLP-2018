@@ -3,13 +3,13 @@ Annotation of TIMEX3 tags in  15 articles from the Dainik Bhaskar Corpus
 
 ## Details 
 
-Total No. of Sampled Articles:  5 
+Total No. of Sampled Articles:  10 
 
-Total No. of Articles having less than 2 TIMEX3 Tags:  1
+Total No. of Articles having  2 TIMEX3 Tags:  3
 
-Total No. of Articles having more than 2 TIMEX3 Tags:  4
+Total No. of Articles having more than 2 TIMEX3 Tags:  7
 
-Total No. of (Presumed) Ambiguous instances:  2
+Total No. of (Presumed) Ambiguous instances:  ~
 
 ## Explanation 
 
@@ -96,5 +96,39 @@ Temporal Expressions](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/en
 
 > Ambiguity: Can we consider  बीते पांच सालों में मासिक as a single tag? 
 
-___
+[========]
+
+**Article No: 55**
+> Can we introduce an new entity , 'REJ' in order to mark rejected instances. Such as - 
+
+'जब वह कुछ देर बाद वापस आया तो वहां से उसकी बाइक गायब थी'
+
+> Reasoning: We reject  कुछ देर बाद since it cannot assertain a specific duration. However, by introducting this entity, at a later time we can use a script to  recall all such instances using a reference to the 'REJ' entity. This may help us introduce new features to our model (?) 
+It also makes it easier for the anotator to recall ALL rejected instances in a corpus.  
+
+
+[========]
+
+**Article No: 60**
+
+'बीते दो दिनों के दौरान रुपए के प्रदर्शन में सुधार देखने को मिला है'
+
+```
+बीते दो दिनों
+DURATION value="P2D" beginPoint="2017-11-27" endPoint="2017-11-28"
+```
+>Reasoning: The sentence talks about the past two days. Hence we have taken value as P2D. We have also introduced a beginPoint attribute to mark the starting of the duration and  an endPoint attribute to mark the end of the time duration. 
+
+> Ambiguity: If we are refering to 'the past two days'  are the beginPoint and endPoint values correct? 
+
+'शुरुआती उतार-चढ़ाव के साथ भारतीय रुपया बीते दिन 20 पैसे की मजबूती के साथ'
+
+```
+बीते दिन
+DURATION value="P1D"
+```
+>Reasoning: We assume that the day being talked about is the same as the publication date. The author is talking about the events of the day upto publishing of the article. 
+
+>Ambiguity: Is our assumption correct? 
+
 
