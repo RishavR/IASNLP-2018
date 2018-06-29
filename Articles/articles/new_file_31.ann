@@ -1,0 +1,11 @@
+T1	Time 140 165	Thu, 30 Nov 2017 02:40 PM
+T2	Time 187 212	Thu, 30 Nov 2017 02:40 PM
+#1	AnnotatorNotes T1	value="2017-11-30T14:40"
+#2	AnnotatorNotes T2	value="2017-11-30T14:40"
+T4	Time 325 335	दोपहर 2:15
+T5	Date 517 523	बुधवार
+T6	Time 277 290	तीन घंटे पहले
+#3	AnnotatorNotes T6	value="2017-11-30T11:40"
+#4	AnnotatorNotes T4	value="2017-11-30T14:15"
+#5	AnnotatorNotes T5	value="2017-11-29"
+T3	Unsure 414 426	कुछ देर पहले

@@ -1,0 +1,13 @@
+T1	Range 694 701	वार्षिक
+#1	AnnotatorNotes T1	value="P1Y", frequency="1X"
+T2	Date 988 993	जनवरी
+#2	AnnotatorNotes T2	value="2018-01-XX"
+T3	Duration 1038 1045	तीन माह
+#3	AnnotatorNotes T3	value="P3M"
+T4	Date 1284 1289	अब तक
+T5	Unsure 1284 1289	अब तक
+T6	Time 125 150	Wed, 29 Nov 2017 08:29 PM
+#4	AnnotatorNotes T6	value="2017-11-29T20:29"
+T7	Time 172 197	Wed, 29 Nov 2017 08:29 PM
+#5	AnnotatorNotes T7	value="2017-11-29T20:29"
+T8	Unsure 694 701	वार्षिक

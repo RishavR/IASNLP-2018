@@ -1,0 +1,16 @@
+T1	Time 134 159	Wed, 29 Nov 2017 05:30 PM
+#1	AnnotatorNotes T1	value="2017-11-29T17:30"
+T2	Time 181 206	Wed, 29 Nov 2017 07:16 PM
+#2	AnnotatorNotes T2	value="2017-11-29T19:16"
+T3	Date 284 288	2015
+#3	AnnotatorNotes T3	value="2015"
+T4	Date 817 821	2015
+#4	AnnotatorNotes T4	value="2015"
+T5	Date 825 829	2016
+#5	AnnotatorNotes T5	value="2016"
+T6	Duration 1377 1384	6 महीने
+#6	AnnotatorNotes T6	value="P6M"
+T7	Date 1638 1642	2015
+#7	AnnotatorNotes T7	value="2015"
+T8	Date 1808 1812	2015
+#8	AnnotatorNotes T8	value="2015"
