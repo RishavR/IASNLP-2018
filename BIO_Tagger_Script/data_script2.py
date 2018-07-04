@@ -56,13 +56,13 @@ for indexval in range(1,301):
         if flag==0:
         # takes care of the condtition of marking ' ' (blank space) as O 
             if token == '':
-                txt += token + "\t " + '\n' 
+                txt += token + "\t" + '\n' 
             else:
-                txt += token + "\tO " + '\n'
+                txt += token + "\tO" + '\n'
         if flag==-1:
             txt += token + "\tI-" + t_flag +  '\n'    
         if flag==1:
-            txt += token + "\tB-" + t_flag + ' \n'
+            txt += token + "\tB-" + t_flag + '\n'
             flag = -1
     
 
