@@ -31,6 +31,8 @@ for indexval in range(1,301):
     #str2=str
     # Experimental Split by Daari & Space using regex split  
     str_text= re.sub(r'(,|\(|\)|~|`|-|\.|;|:|\'|\"|\?|\+|\{|\}|\[|\]|\/|\\|!|@|#|$|%|\^|&|\*)','', str_text)
+    #takes care of the case of double daari or "।।" 
+    str_text= re.sub(r'।।','।', str_text)
     str2_list=re.split('(।)',str_text)
     mod_list=[]
     for sentence in str2_list:
@@ -52,7 +54,11 @@ for indexval in range(1,301):
             continue
         
         if flag==0:
-            txt += token + "\tO " + '\n'
+        # takes care of the condtition of marking ' ' (blank space) as O 
+            if token == '':
+                txt += token + "\t " + '\n' 
+            else:
+                txt += token + "\tO " + '\n'
         if flag==-1:
             txt += token + "\tI-" + t_flag +  '\n'    
         if flag==1:
