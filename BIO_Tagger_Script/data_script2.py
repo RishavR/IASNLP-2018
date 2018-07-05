@@ -30,12 +30,16 @@ for indexval in range(1,301):
     str_text = ET.tostring(root, encoding='utf8', method='text').decode('utf8')
     #str2=str
     # Experimental Split by Daari & Space using regex split  
+
     str_text= re.sub(r'(,|\(|\)|~|`|\.|;|:|\'|\"|\+|\{|\}|\[|\]|\\|@|#|$|%|\^|&|\*)','', str_text)
-    str_text= re.sub(r'(!,\?)','।', str_text)
+    str_text= re.sub(r'(!,?)','।', str_text)
     str_text= re.sub(r'(/)',' ', str_text)
+    str_text= re.sub(r'\n',' \n ', str_text)
     #takes care of the case of double daari or "।।" 
-    str_text= re.sub(r'( ॥|।।)','।', str_text)
+    str_text= re.sub(r'( ॥|।।|॥)','।', str_text)
     str2_list=re.split('(।)',str_text)
+    # if '-' in str_text:
+    #     file_val.append(indexval)
     mod_list=[]
     for sentence in str2_list:
         mod_list.extend(sentence.split(" "))
@@ -76,3 +80,5 @@ for indexval in range(1,301):
     f = open("../BIO_TaggedM/C-"+str_index+".txt", 'w+')
     f.write(txt)
     f.close()
+
+#print(file_val)
