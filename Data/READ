@@ -1,0 +1,2 @@
+Contains BIO, POS, Pivot and Digit/Punctuation tagged data.
+Format: [Hindi Word] [BIO] [POS] [isPivot] [isDigitPunc]
