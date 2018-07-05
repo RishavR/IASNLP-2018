@@ -30,21 +30,26 @@ for indexval in range(1,301):
     str_text = ET.tostring(root, encoding='utf8', method='text').decode('utf8')
     #str2=str
     # Experimental Split by Daari & Space using regex split  
-    str_text= re.sub(r'(,|\(|\)|~|`|-|\.|;|:|\'|\"|\?|\+|\{|\}|\[|\]|\/|\\|!|@|#|$|%|\^|&|\*)','', str_text)
+    str_text= re.sub(r'(,|\(|\)|~|`|\.|;|:|\'|\"|\+|\{|\}|\[|\]|\\|@|#|$|%|\^|&|\*)','', str_text)
+    str_text= re.sub(r'(!,\?)','।', str_text)
+    str_text= re.sub(r'(/)',' ', str_text)
     #takes care of the case of double daari or "।।" 
-    str_text= re.sub(r'।।','।', str_text)
+    str_text= re.sub(r'( ॥|।।)','।', str_text)
     str2_list=re.split('(।)',str_text)
     mod_list=[]
     for sentence in str2_list:
         mod_list.extend(sentence.split(" "))
     str_list = str_text.split()
     check_list=str_list[:]
+    skip_list = ['\n']
 
     # Logical Code of creating the output file 
     flag = 0
     t_flag = ''
     txt = ""
     for token in mod_list:
+        if token in skip_list:
+            continue
         if token == "P" or token=="D" or token == "F":
             t_flag = token
             if flag == 0:
